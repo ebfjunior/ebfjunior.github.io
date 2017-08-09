@@ -1,8 +1,8 @@
 # Site settings
 title: Edson Júnior
 description: 'Um desenvolvedor fullstack, amante de novas tecnologias, jogos, filmes e séries. Tenta dar uma de guitarrista nas horas vagas.'
-url: 'http://ebfjunior.github.io/'
-baseurl: ''
+url: 'http://ebfjunior.github.io'
+baseurl: '/'
 gems: ['jekyll-github-metadata']
 # google_analytics: 'UA-XXXXXX-X'
 disqus_shortname: 'ebfjunior'
