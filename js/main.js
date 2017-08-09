@@ -28,6 +28,8 @@ $(document).ready(function () {
     $('.navigation--social').css('margin-left', '0');
   }
 
+console.log(window.location.pathname);
+console.log("{{ site.baseurl }}");
   if (window.location.pathname !== '{{ site.baseurl }}' && window.location.pathname !== '{{ site.baseurl }}index.html') {
     console.log("6");
     $('.panel-cover').addClass('panel-cover--collapsed');
