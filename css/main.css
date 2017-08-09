@@ -42,6 +42,12 @@ pre.highlight code,
   padding: 0 5px;
 }
 
+.post-meta__tags a{
+  border: 1px solid #e25440;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
 .footer__copyright {
     margin: 0 20px 10px;
 }

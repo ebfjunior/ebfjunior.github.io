@@ -1,18 +1,18 @@
 # Site settings
-title: Jekyll-Uno
-description: 'Jekyll-Uno - a minimal, responsive theme for Jekyll'
-url: 'http://joshgerdes.com/jekyll-uno'
-baseurl: '/jekyll-uno/'
+title: Edson Júnior
+description: 'Um desenvolvedor fullstack, amante de novas tecnologias, jogos, filmes e séries. Tenta dar uma de guitarrista nas horas vagas.'
+url: 'http://edsonjunior.io'
+baseurl: '/'
 # google_analytics: 'UA-XXXXXX-X'
-# disqus_shortname: 'your-disqus-name'
+disqus_shortname: 'ebfjunior'
 
 author:
-  name: 'Josh Gerdes'
-  email: josh@joshgerdes.com
-  twitter_username: joshgerdes
-  facebook_username: joshgerdes
-  github_username:  joshgerdes
-  linkedin_username:  joshgerdes
+  name: 'Edson Júnior'
+  email: ejunior.batista@gmail.com
+  twitter_username: ebfjunior
+  # facebook_username: ebfjunior
+  github_username:  ebfjunior
+  linkedin_username:  ebfjunior
 
 defaults:
   -
@@ -37,3 +37,6 @@ kramdown:
 
 gems: ['jekyll-paginate']
 exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
+
+collections:
+  - series
