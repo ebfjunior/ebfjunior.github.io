@@ -7,7 +7,7 @@ tags: [jekyll, apresentação]
 
 Fala galera, sejam bem vindos ao meu blog! Antes de inaugurá-lo com o primeiro post, eu gostaria de me apresentar. 
 
-Meu nome é **Edson Batista Ferreira Júnior**, tenho 23 anos, sou noivo da Yasmin (a garota mais incrível do mundo), e atualmente sou Desenvolvedor Web na [IT Quality Systems][itquality]. Trabalho com desenvolvimento desde os 17 anos, e venho sempre buscando tecnologias novas para aprimorar e agregar os projetos que colaboro.
+Meu nome é **Edson Batista Ferreira Júnior**, tenho 23 anos, sou noivo da **Yasmin** (a garota mais incrível do mundo), e atualmente sou Desenvolvedor Web na [IT Quality Systems][itquality]. Trabalho com desenvolvimento desde os 17 anos, e venho sempre buscando tecnologias novas para aprimorar e agregar os projetos que colaboro.
 
 Desde os 10 anos eu já gostava de brincar de fazer páginas em HTML (e é claro que eu me achava um Web Designer Master Blaster por saber fazer uma tabela), e foi essa paixão juvenil que me levou a fazer um curso técnico de **Informática Industrial** na **ETERJ - Escola Técnica do Rio de Janeiro**. Hoje, já estou no finalzinho do curso de **Engenharia da Computação** na **Universidade Veiga de Almeida**, mas com certeza não irei parar por aí.
 
