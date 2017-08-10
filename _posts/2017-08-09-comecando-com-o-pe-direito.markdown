@@ -5,14 +5,16 @@ categories: [miscellaneous]
 tags: [jekyll, apresentação]
 ---
 
-Fala galera, sejam bem vindos ao meu blog! Antes de inaugurá-lo com o primeiro post, eu gostaria de me apresentar. Meu nome é **Edson Batista Ferreira Júnior**, tenho 23 anos e atualmente sou Desenvolvedor Web na [IT Quality Systems][itquality]. Trabalho com desenvolvimento desde os 17 anos, e venho sempre buscando tecnologias novas para aprimorar e agregar os projetos em que trabalho.
+Fala galera, sejam bem vindos ao meu blog! Antes de inaugurá-lo com o primeiro post, eu gostaria de me apresentar. 
+
+Meu nome é **Edson Batista Ferreira Júnior**, tenho 23 anos e atualmente sou Desenvolvedor Web na [IT Quality Systems][itquality]. Trabalho com desenvolvimento desde os 17 anos, e venho sempre buscando tecnologias novas para aprimorar e agregar os projetos que colaboro.
 
 Desde os 10 anos eu já gostava de brincar de fazer páginas em HTML (e é claro que eu me achava um Web Designer Master Blaster por saber fazer uma tabela), e foi essa paixão juvenil que me levou a fazer um curso técnico de **Informática Industrial** na **ETERJ - Escola Técnica do Rio de Janeiro**. Hoje, já estou no finalzinho do curso de **Engenharia da Computação** na **Universidade Veiga de Almeida**, mas com certeza não irei parar por aí.
 
-Gosto de tudo que é relacionado à desenvolvimento de sistemas, e confesso que às vezes preciso me forçar a não correr para aprender toda linguagem ou tecnologia que está em alta, *<s>principalmente quando se trata de algum novo e revolucionário framework JS</s>*. Dentre as tecnologias que mais gosto de trabalhar, eu posso citar: **Ruby**, **Javascript**, **PHP**,**Wordpress** e **Java** *(Calma, é só quando se trata de desenvolvimento para Android)*.
+Gosto de tudo que é relacionado à desenvolvimento de sistemas, e confesso que às vezes preciso me forçar a não correr para aprender toda linguagem ou tecnologia que está em alta, *<s>principalmente quando se trata do novo e revolucionário framework JS da semana</s>*. Dentre as tecnologias que mais gosto de trabalhar, eu posso citar: **Ruby**, **Javascript**, **PHP**,**Wordpress** e **Java** *(Calma, é só quando se trata de Android)*.
 
 
-## Mas então, de que será esse blog?##
+## Mas então, sobre o que será esse blog?##
 
 Então, o objetivo principal do blog é passar qualquer tipo de conhecimento que eu ache relevante, seja porque eu tenha penado um bocado para resolver um problema, ou simplesmente esteja empolgado em compartilhar algo que eu ache irado! A minha ideia é fazer posts semanais com tutoriais, dicas, séries do tipo **"Aprendendo a Linguagem XPTO do zero"**, ou qualquer outra coisa que esteja inundando minha mente de ideias e me tirando noites de sono :P
 
@@ -21,7 +23,7 @@ Então, o objetivo principal do blog é passar qualquer tipo de conhecimento que
 
 Eu não sou o dententor de todo conhecimento dev do mundo, então eu também espero poder crescer com seus comentários, dúvidas, críticas e sugestões. Aliás, um dos principais fatores que me motivaram a escrever esse blog é a oportunidade e a necessidade de aprender ainda mais para que eu possa sempre estar trazendo conteúdos novos e relevantes para vocês =)
 
-## Partindo para o que importa...##
+## Partindo para o que realmente importa...##
 
 Para este primeiro post do blog, eu não achei nada mais justo do que falar um pouco da tecnologia por trás do mesmo. E na verdade já é um tema bastante abordado na comunidade de *dev bloggers*.
 
@@ -31,13 +33,15 @@ O Jekyll nada mais é que uma gem *(logo, ele roda em cima do Ruby)* que te forn
 
 Agora você deve estar se perguntando: "**Mas eu li lá em cima que você gosta de Wordpress. Por que você não fez seu blog com ele?**"
 
-E na verdade, essa é uma excelente pergunta. Eu realmente acho o Wordpress uma ferramenta fantástica e versátil, e, inclusive, é a plataforma que mais agrega valor no universo PHP, na minha humilde opinião. Então por quê eu não optei por utilizá-lo?
+E na verdade, essa é uma excelente pergunta. Eu realmente acho o Wordpress uma ferramenta fantástica e versátil. Inclusive, é a plataforma que mais agrega valor no universo PHP, na minha humilde opinião. Então por quê eu não optei por utilizá-lo?
 
-A resposta é bem simples. O Wordpress acabou se tornando *pau pra toda obra* ao longo dos anos, e isso não é necessariamente uma coisa ruim. Com o Wordpress você consegue fazer um simples site institucional para uma empresa, como você também consegue fazer até sistemas mais complexos, que vão muito além de blogs. Com isso, existe uma infinidade de plugins que provavelmente vão facilitar a maior parte do seu trabalho.
+A resposta é bem simples. O Wordpress era muito para mim.
 
-Mas quando você precisa apenas de um simples blog, utilizar o Wordpress acaba sendo como usar uma bazuca para matar uma formiga.
+A verdade é que o Wordpress acabou se tornando *pau pra toda obra* ao longo dos anos, mas isso não é necessariamente uma coisa ruim. Com o Wordpress você consegue fazer desde um simples site institucional até sistemas mais complexos, que vão muito além de blogs. 
 
-Mas não subestime o Jekyll! Existem outras vantagens em utilizá-lo que vão muito além da facilidade oferecida, dentre elas:
+Com isso, existe uma infinidade de plugins que provavelmente vão facilitar a maior parte do seu trabalho. Mas quando você precisa apenas de um simples blog, utilizar o Wordpress acaba sendo como usar uma bazuca para matar uma formiga.
+
+Mas não subestime o Jekyll! Existem outras vantagens em utilizá-lo que vão muito além da simplicidade oferecida, dentre elas:
 
 ### Sem banco de dados, apenas páginas estáticas
 
@@ -47,7 +51,7 @@ Além disso, se você também é um entusiasta do Wordpress, provavelmente vai c
 
 E o fato de termos apenas **HTML**, **CSS** e **Javascript** em nosso blog nos leva diretamente à próxima vantagem...
 
-### Hospedagem mais fácil impossível
+### Hospedagem mais fácil, impossível
 
 Existe coisa mais fácil e barata do que hospedar um site feito todo em HTML? Afinal, não precisamos de nenhum servidor capaz de interpretar PHP, Ruby ou qualquer outra linguagem de backend.
 
@@ -57,7 +61,7 @@ Ou seja, com um simples `git push` nós já temos o nosso post rodando lisinho, 
 
 ### Fugindo do mainstream
 
-O fato do wordpress ser o CMS mais conhecido do mundo também acaba se tornando o seu Tendão de Aquiles.
+O fato do wordpress ser o CMS mais conhecido do mundo também acaba se tornando o seu **Tendão de Aquiles**.
 
 Afinal, como existem milhares de sites/blogs hospedados na Web utilizando uma única plataforma central como o Wordpress, é natural que esta mesma plataforma também seja o principal alvo de ataques de grupos hackers.
 
