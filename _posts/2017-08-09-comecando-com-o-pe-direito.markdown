@@ -9,7 +9,7 @@ Fala galera, sejam bem vindos ao meu blog! Antes de inaugurá-lo com o primeiro 
 
 Meu nome é **Edson Batista Ferreira Júnior**, tenho 23 anos, sou noivo da **Yasmin** (a garota mais incrível do mundo), e atualmente sou Desenvolvedor Web na [IT Quality Systems][itquality]. Trabalho com desenvolvimento desde os 17 anos, e venho sempre buscando tecnologias novas para aprimorar e agregar os projetos que colaboro.
 
-Desde os 10 anos eu já gostava de brincar de fazer páginas em HTML (e é claro que eu me achava um Web Designer Master Blaster por saber fazer uma tabela), e foi essa paixão juvenil que me levou a fazer um curso técnico de **Informática Industrial** na **ETERJ - Escola Técnica do Rio de Janeiro**. Hoje, já estou no finalzinho do curso de **Engenharia da Computação** na **Universidade Veiga de Almeida**, mas com certeza não irei parar por aí.
+Desde os 10 anos eu já gostava de brincar de fazer páginas em HTML (e é claro que eu me achava um Web Designer Master Blaster por saber fazer uma tabela), e foi essa paixão juvenil que me levou a fazer um curso técnico de **Informática Industrial** na [ETERJ - Escola Técnica do Rio de Janeiro][eterj]. Hoje, já estou no finalzinho do curso de **Engenharia da Computação** na [Universidade Veiga de Almeida][uva], mas com certeza não irei parar por aí.
 
 Gosto de tudo que é relacionado à desenvolvimento de sistemas, e confesso que às vezes preciso me forçar a não correr para aprender toda linguagem ou tecnologia que está em alta, *<s>principalmente quando se trata do novo e revolucionário framework JS da semana</s>*. Dentre as tecnologias que mais gosto de trabalhar, eu posso citar: **Ruby**, **Javascript**, **PHP**,**Wordpress** e **Java** *(Calma, é só quando se trata de Android)*.
 
@@ -27,7 +27,7 @@ Eu não sou o dententor de todo conhecimento dev do mundo, então eu também esp
 
 Para este primeiro post do blog, eu não achei nada mais justo do que falar um pouco da tecnologia por trás do mesmo. E na verdade já é um tema bastante abordado na comunidade de *dev bloggers*.
 
-Sim, senhores. É dele mesmo que estou falando! Do nosso querido e amado **Jekyll**.
+Sim, senhores. É dele mesmo que estou falando! Do nosso querido e amado [Jekyll][jekyll].
 
 O Jekyll nada mais é que uma gem *(logo, ele roda em cima do Ruby)* que te fornece uma estrutura para escrever seu blog, e ele fica responsável por compilar tudo e gerar html estático para você.
 
@@ -55,13 +55,13 @@ E o fato de termos apenas **HTML**, **CSS** e **Javascript** em nosso blog nos l
 
 Existe coisa mais fácil e barata do que hospedar um site feito todo em HTML? Afinal, não precisamos de nenhum servidor capaz de interpretar PHP, Ruby ou qualquer outra linguagem de backend.
 
-O **Github** é mais do que necessário para hospedarmos o nosso blog,e na minha opinião, esse é o ponto mais legal do Jekyll. Ainda mais para quem já está careca de utilizar o Git em seu workflow.
+O [Github][github] é mais do que necessário para hospedarmos o nosso blog,e na minha opinião, esse é o ponto mais legal do Jekyll. Ainda mais para quem já está careca de utilizar o Git em seu workflow.
 
 Ou seja, com um simples `git push` nós já temos o nosso post rodando lisinho, além de automaticamente ganharmos todo o histórico de commits como brinde.
 
 ### Fugindo do mainstream
 
-O fato do wordpress ser o CMS mais conhecido do mundo também acaba se tornando o seu **Tendão de Aquiles**.
+O fato do wordpress ser o CMS mais conhecido do mundo também acaba se tornando o seu [Calcanhar de Aquiles][aquiles].
 
 Afinal, como existem milhares de sites/blogs hospedados na Web utilizando uma única plataforma central como o Wordpress, é natural que esta mesma plataforma também seja o principal alvo de ataques de grupos hackers.
 
@@ -73,7 +73,7 @@ Ainda falando em segurança, provavelmente você nunca mais precisará fazer um 
 
 Talvez nem todo mundo concorde nesse ponto, mas eu acho a forma de escrever com o Jekyll bem prática e intuitiva.
 
-Todos os posts são escritos em **Markdown** e ficam organizados dentro da pasta `_posts`. Isso nos possibilita que escrevamos nossos textos de qualquer lugar, em qualquer dispositivo.
+Todos os posts são escritos em [Markdown][markdown] e ficam organizados dentro da pasta `_posts`. Isso nos possibilita que escrevamos nossos textos de qualquer lugar, em qualquer dispositivo.
 
 E vamos combinar, o padrão Markdown não é tão difícil assim de se decorar, não é mesmo?
 
@@ -93,3 +93,9 @@ Até a próxima!
 
 
 [itquality]:   http://itquality.com.br
+[eterj]:   http://www.eterj.com.br
+[uva]:   http://www.uva.br
+[jekyll]:   https://jekyllrb.com/
+[github]:   https://github.com/
+[aquiles]:   https://www.significados.com.br/calcanhar-de-aquiles/
+[markdown]:   https://learn.getgrav.org/content/markdown
