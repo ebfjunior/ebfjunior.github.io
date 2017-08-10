@@ -15,6 +15,13 @@ layout: default
   <section class="post">
     {{ content }}
   </section>
+
+  <!-- Go to www.addthis.com/dashboard to customize your tools -->
+  <div class="addthis-container">
+    <small>COMPARTILHE</small>
+    <div class="addthis_inline_share_toolbox"></div>
+  </div>
   {% if page.comments != false and site.disqus_shortname %}<section id="disqus_thread"></section><!-- /#disqus_thread -->{% endif %}
 </article>
+
 {% if page.comments != false %}{% include disqus.html %}{% endif %}
