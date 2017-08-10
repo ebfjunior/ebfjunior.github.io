@@ -4,7 +4,7 @@ description: 'Um desenvolvedor fullstack, amante de novas tecnologias, jogos, fi
 url: 'http://ebfjunior.github.io/'
 baseurl: 'http://ebfjunior.github.io/'
 gems: ['jekyll-github-metadata']
-# google_analytics: 'UA-XXXXXX-X'
+google_analytics: 'UA-62613382-4'
 disqus_shortname: 'ebfjunior'
 
 author:
