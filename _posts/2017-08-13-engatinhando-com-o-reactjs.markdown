@@ -1,6 +1,6 @@
 ---
 title:  "Engatinhando com o ReactJS"
-date:   2017-08-10 15:04:23
+date:   2017-08-10 14:50:00
 categories: [frontend]
 tags: [react, frontend, js]
 ---
