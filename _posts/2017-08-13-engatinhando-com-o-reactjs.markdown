@@ -5,6 +5,8 @@ categories: [frontend]
 tags: [react, frontend, js]
 ---
 
+![ReactJS]({{ site.url }}/images/reactjs.jpg)
+
 Fala pessoal! Como eu já falei pra vocês no meu [primeiro post][primeiro-post], atualmente estou na vibe do [ReactJS][reactjs], e pra ser sincero, foi **amor à primeira vista**! O React pode até ter virado uma modinha hoje em dia, mas é uma biblioteca tão incrível que eu acredito que ela veio para ficar, e é por isso que hoje vamos iniciar uma série sobre como criar uma aplicação em React do zero!
 
 Mas antes de entrarmos na nossa aplicação propriamente dita _<s>(já adianto que os amantes de música vão gostar!)</s>_, nesse artigo vamos falar sobre o que é o React e o básico da sua utilização.

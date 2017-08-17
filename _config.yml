@@ -2,7 +2,7 @@
 title: Edson Júnior
 description: 'Um desenvolvedor fullstack, amante de novas tecnologias, jogos, filmes e séries. Tenta dar uma de guitarrista nas horas vagas.'
 url: 'http://ebfjunior.github.io/'
-baseurl: 'http://ebfjunior.github.io/'
+baseurl: ''
 gems: ['jekyll-github-metadata']
 google_analytics: 'UA-62613382-4'
 disqus_shortname: 'ebfjunior'
