@@ -1,5 +1,5 @@
 ---
-title:  "ES6: O Guia Definitivo"
+title:  "ES6: O Guia Definitivo - Parte 1"
 date:   2017-08-17 11:11:23
 categories: [frontend]
 tags: [javascript, es6, guia]
@@ -172,6 +172,13 @@ Bem melhor, não?
 
 **BÔNUS:** Reparem que no código acima foi utilizado o loop `for...of`, que é bem parecido com o `for...in`, porém o resultado da iteração é o objeto propriamente dito dentro do array, e não o seu índice. Assim, no exemplo, nós não precisamos acessar um dependente como `dependente[i]`, e sim acessando diretamente a variável.
 
+---
+
+Bom, não tem como falar de todos os recursos que a versão ES6 trouxe ao Javascript sem me estender demais, por isso eu vou voltar em um próximo artigo para trazer mais novas funcionalidades. Ainda vamos falar sobre **Classes**, **Arrow Functions**, **Destructuring** e **Muito Mais**!!!
+
+Então é isso galera. Nos vemos no próximo artigo, e se vocês estão gostando (ou não) dos temas, didática e a forma de escrita dos artigos, não deixe de comentar.
+
+**Até a próxima!**
 
 
 
