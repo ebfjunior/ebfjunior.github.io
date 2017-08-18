@@ -958,6 +958,8 @@ h5 {
 	color: #333333;
 	-webkit-font-smoothing: antialiased; }
 
+
+
 h1 {
 	margin-top: 0;
 	font-size: 2.4em;
@@ -1193,7 +1195,12 @@ hr {
 	margin: 0 0 5px 0;
 	font-size: 2.5em;
 	letter-spacing: 4px;
-	color: #FFF; }
+	color: #FFF; 
+	display: block;
+	line-height: 1.2em;
+	font-family: "Roboto Slab",serif;
+	font-weight: lighter;
+}
 
 .panel-subtitle {
 	font-family: "Roboto Slab", serif;
