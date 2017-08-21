@@ -2,7 +2,7 @@
 title:  "Começando com o Pé Direito!"
 date:   2017-08-09 11:11:23
 categories: [miscellaneous]
-tags: [jekyll, apresentação]
+tags: [jekyll]
 ---
 
 Fala galera, sejam bem vindos ao meu blog! Antes de inaugurá-lo com o primeiro post, eu gostaria de me apresentar. 

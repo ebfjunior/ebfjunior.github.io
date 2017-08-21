@@ -2,7 +2,7 @@
 title:  "Engatinhando com o ReactJS"
 date:   2017-08-13 14:50:00
 categories: [frontend]
-tags: [react, frontend, js]
+tags: [react, javascript]
 excerpt_separator: <!--more-->
 ---
 
