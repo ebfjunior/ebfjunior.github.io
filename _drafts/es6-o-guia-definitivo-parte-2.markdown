@@ -8,9 +8,26 @@ excerpt_separator: <!--more-->
 
 ![ES6](/images/es6.jpg)
 
-Fala galera! Já deu pra ver que a pancada de funcionalidades que vieram junto com o **ES6**, não é? São tantos os novos recursos da linguagem, que eu não consegui falar nem sobre a metade deles no post [ES6: O Guia Definitivo - Parte 1][ultimo-post]. Então antes de me estender muito, vamos seguir com as novidades do ES6!
+Fala galera! Já deu pra ver a pancada de funcionalidades que vieram junto com o **ES6**, não é? São tantos os novos recursos da linguagem, que eu não consegui falar nem sobre a metade deles no post [ES6: O Guia Definitivo - Parte 1][ultimo-post]. Então antes de me estender muito, vamos seguir com as novidades do ES6!
 
 <!--more-->
+
+## Destructuring assignments
+
+Não é incomum precisarmos criar variáveis intermediárias para dados que vêm de uma estrutura como `Arrays` ou `Hashs`, quando o objetivo é o reaproveitamento de código.
+
+Você com certeza já fez muitos códigos como os que seguem:
+
+{% gist a38a7bfab9f897bb7095a1cc0b27f309 %}
+
+Não é lá muito elegante, mas ainda é melhor do que repetir toda a estrutura do seu Array/Objeto várias vezes para usar algum determinado valor. Mas com a chegada do ES6 nós ganhamos o versátil e poderoso recurso de **Destructuring**.
+
+Destructuring é exatamente você desestruturar o seu elemento e automaticamente criar variáveis com seus respectitivos valores. É como se estivéssemos extraindo os valores de Arrays e Objetos!
+
+Então vejamos o exemplo acima, já com o uso do **Destructuring**:
+
+{% gist 063770077fdaa86340061ab86c909d6d %}
+
 
 ## Orientação a objetos
 
@@ -20,92 +37,47 @@ Isso acontece porque, até o **ES5**, o Javascript se utilizava apenas da [proto
 
 Vamos exemplificar como funciona a Orientação a Objetos por prototipação:
 
-{% highlight javascript linenos %}
-function Monstro(){
-  this.descricao = function(){
-    console.log("Eu tenho "+this.altura+"m de altura e peso "+this.peso+"kg");
-  }
-}
+{% gist 510d98a3fd9a5c63841e6f11c7b2c792 %}
 
-var lobisomen = new Monstro();
-lobisomen.altura = 2.2;
-lobisomen.peso = 110;
-lobisomen.uivar = function(){
-  console.log("Auuuuuuuuuuuuuuuuu!");
-}
+Note que estamos definindo um _"rascunho"_ de como todo monstro deve ser, mesmo que possam ter métodos e atributos diferentes. E esses métodos diferenciados são definidos diretamente no objeto criado, ou seja, podemos ter uma infinidade de monstros diferentes usando apenas um único **protótipo** inicial.
 
-var vampiro = new Monstro(1.9, 78);
-vampiro.altura = 1.9;
-vampiro.peso = 78;
-vampiro.morder = function(){
-  console.log("Estou chupando seu sangue!");
-}
-
-lobisomen.descricao(); //Eu tenho 2.2m de altura e peso 110kg
-lobisomen.uivar(); //Auuuuuuuuuuuuuuuuu!
-
-vampiro.descricao(); //Eu tenho 1.9m de altura e peso 78kg
-vampiro.morder(); //Estou chupando seu sangue!
-
-{% endhighlight %}
-
-
-Note que estamos definindo um _"rascunho"_ de como todo monstro deve ser, mesmo que possam ter métodos e atributos diferentes. E esses métodos diferenciados são definidos diretamente no objeto criado, ou seja, podemos ter uma infinidade de monstros diferentes usando apenas um único _"protótipo"_ inicial.
-
-No nosso exemplo, onde temos apenas um tipo de cada monstro, a prototipação nos serve perfeitamente, mas se quisermos instanciar vários lobisomens por exemplo, teríamos que repetir o nosso código algumas vezes, ou utilizar a propriedade `prototype` para termos um comportamento parecido com a **Herança** que estamos acostumados.
+No nosso exemplo, onde temos apenas um tipo de cada monstro, a **prototipação** nos serve perfeitamente, mas se quisermos instanciar vários lobisomens por exemplo, teríamos que repetir o nosso código algumas vezes, ou utilizar a propriedade `prototype` para termos um comportamento parecido com a **Herança** que estamos acostumados.
 
 Veja o seguinte exemplo, com o uso de `prototypes`:
 
-{% highlight javascript linenos %}
-
-function Monstro(altura, peso){
-  this.altura = altura;
-  this.peso = peso;
-  
-  this.descricao = function(){
-    console.log("Eu tenho "+this.altura+"m de altura e peso "+this.peso+"kg");
-  }
-}
-
-function Lobisomen(altura, peso){
-  Monstro.call(this, altura, peso);
-  this.uivar = function(){
-    console.log("Auuuuuuuuuuuuuuuuu!");
-  }
-}
-Lobisomen.prototype = new Monstro();
-
-function Vampiro(altura, peso){
-  Monstro.call(this, altura, peso);
-  this.morder = function(){
-    console.log("Estou chupando seu sangue!");
-  }
-}
-Vampiro.prototype = new Monstro();
-
-var lobisomen1 = new Lobisomen(2.2, 110);
-var lobisomen2 = new Lobisomen(2.23, 105);
-var vampiro1 = new Vampiro(1.85, 78);
-var vampiro2 = new Vampiro(1.80, 71);
-
-lobisomen1.descricao(); //Eu tenho 2.2m de altura e peso 110kg
-lobisomen1.uivar(); //Auuuuuuuuuuuuuuuuu!
-
-lobisomen2.descricao(); //Eu tenho 2.23m de altura e peso 105kg
-lobisomen2.uivar(); //Auuuuuuuuuuuuuuuuu!
-
-vampiro1.descricao(); //Eu tenho 1.85m de altura e peso 78kg
-vampiro1.morder(); //Estou chupando seu sangue!
-
-vampiro2.descricao(); //Eu tenho 1.8m de altura e peso 71kg
-vampiro2.morder(); //Estou chupando seu sangue!
-
-{% endhighlight %}
+{% gist a5624eb381766bf90e62eca564dbb553 %}
 
 Como vocês podem ver, além de chamar o construtor do "objeto pai", precisamos substituir a propriedade **prototype** para termos acesso à todos os métodos do protótipo Monstro. 
 
 Se você não está familiarizado com o uso do prototype, ele nada mais é que uma propriedade que contém uma cópia do seu objeto pai. Por exemplo, quando instanciamos uma data com `new Date()`, automaticamente a sua propriedade **prototype** é setada com `Date.prototype`, fazendo com que nosso objeto "herde" os métodos e propriedades de `Date` _(para mais informações sobre o **prototype**, confira esse [post][prototype-alura] no blog da [Alura][alura])_.
 
+### Suporte a Classes do ES6
+
+O exemplo acima ficaria assim se for escrito na especificação do ES6, utilizando o suporte à Classes de objetos:
+
+{% gist c88bb6cd2de52a2bb62869ee89c61def %}
+
+Tudo bem, o código pode não ter ficado menor, mas com certeza ficou mais legível.
+
+O método `constructor` é executado toda vez que um novo objeto é instanciado, e quando estamos instanciando uma classe “filha”, podemos usar o método `super` para chamar o construtor do pai.
+
+Note que estamos utilizando o prefixo `_` antes dos nomes de atributos da nossa classe `Monstro`. Essa é apenas uma **convenção** para a definição de atributos privados da nossa classe, e por se tratar apenas de uma convenção, entende-se que a linguagem não vai fazer nenhum esforço para bloquear o acesso desses atributos de fora da nossa classe. Mas é um bom padrão para identificarmos se um atributo é privado toda vez que batemos o olho nele.
+
+E a parte boa é que ganhamos [sugar syntax][sugar-syntax] para os nossos **Getters and Setters**. Veja um exemplo:
+
+{% gist fc3c08353006c6eaf305f9020a4865b2 %}
+
+Mesmo a classe não possuindo um atributo `raio`, nós podemos utilizar códigos como `circunferencia.raio` ou `circunferencia.raio = x` graças às diretivas `get` e `set` na definição da nossa classe.
+
+E se você está se perguntando _"Mas onde estão os métodos estáticos?"_, pode ficar tranquilo que o pessoal do **TC39** não se esqueceu deles. Basta utilizar a diretiva `static` antes da definição do método:
+
+{% gist 72eac6ae9a6506adb625f33d683a62a9 %}
+
+E vale lembrar duas últimas coisas sobre o **Suporte a Classes** do **ES6**: 
+
+- A Declaração de classes não são **hoisted** como acontece com as funções. Ou seja, primeiro precisamos declarar nossa classe para só depois utilizá-la.
+
+- Todos os itens que foram abordardos nesse tópico não passam de **sugar syntaxes** para a **prototipação** padrão do **ES5**. Com isso temos uma maneira mais semântica de aplicar a orientação à objetos em nossos projetos através da declaração de classes, mas para o Javascript, tudo continua sendo a boa e velha prototipação. E isso não é necessariamente uma coisa ruim, porque nos dá a possibilidade de fazer um _"mix"_ das duas abordagens =) 
 
 ---
 
@@ -114,3 +86,4 @@ Se você não está familiarizado com o uso do prototype, ele nada mais é que u
 [prototipacao]:                 https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript
 [prototype-alura]:              http://blog.alura.com.br/heranca-em-javascript/
 [alura]:                        https://www.alura.com.br/
+[sugar-syntax]:                 https://www.quora.com/What-is-syntactic-sugar-in-programming-languages
