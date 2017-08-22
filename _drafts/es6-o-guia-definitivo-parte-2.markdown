@@ -28,7 +28,9 @@ Então vejamos o exemplo acima, já com o uso do **Destructuring**:
 
 {% gist 063770077fdaa86340061ab86c909d6d %}
 
+Beem melhor né? E o melhor de tudo é que você pode utilizar o **Destructuring** de várias formas, pois ele é super flexível. Confere aí mais alguns exemplos bacanas de utilização:
 
+6035ce704d33e1fca39b087b6c693187
 ## Orientação a objetos
 
 Um dos recursos mais aguardados _(e polêmicos)_ do *ES6* é o suporte à **Classes** de objetos. A verdade é que o nosso querido **Javascript** sempre foi uma linguagem extremamente flexível, e por isso existem muitas formas de você representar um objeto, desde a declaração de um simples **JSON** até uma [função de primeira classe][primeira-classe].
