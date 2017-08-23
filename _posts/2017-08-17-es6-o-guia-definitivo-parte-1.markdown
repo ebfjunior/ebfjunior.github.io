@@ -184,21 +184,24 @@ Bom, não tem como falar de todos os recursos que a versão ES6 trouxe ao Javasc
 
 Então é isso galera. Nos vemos no próximo artigo, e se vocês estão gostando (ou não) dos temas, didática e a forma de escrita dos artigos, não deixe de comentar.
 
+**EDIT:** Continue aprendendo mais sobre ES6 lendo o artigo [ES6: O Guia Definitivo - Parte 2][es6-o-guia-definitivo-parte-2].
+
 **Até a próxima!**
 
 
 
 
 
-[ultimo-post]:                  {% post_url 2017-08-13-engatinhando-com-o-reactjs %}
+[ultimo-post]:                      {% post_url 2017-08-13-engatinhando-com-o-reactjs %}
 [guerra-dos-navegadores]:       http://docente.ifrn.edu.br/moisessouto/disciplinas/autoria-web/a-verdadeira-historia-da-internet-guerra-dos-navegadores
-[tc39]:                         http://www.ecma-international.org/memento/TC39.htm
-[compatibilidade-es6]:          https://kangax.github.io/compat-table/es6/
-[transpiler]:                   https://scotch.io/tutorials/javascript-transpilers-what-they-are-why-we-need-them
-[babel]:                        https://babeljs.io/
-[webpack]:                      https://webpack.js.org/
-[babel-online]:                 http://babeljs.io/repl/#?babili=false&evaluate=true&lineWrap=false&presets=es2015%2Creact%2Cstage-2&targets=&browsers=&builtIns=false&debug=false&code_lz=Q
-[hoisting]:                     http://loopinfinito.com.br/2014/10/29/hoisting-e-escopo-em-javascript/
-[iife]:                         https://developer.mozilla.org/pt-BR/docs/Glossario/IIFE
+[tc39]:                             http://www.ecma-international.org/memento/TC39.htm
+[compatibilidade-es6]:              https://kangax.github.io/compat-table/es6/
+[transpiler]:                       https://scotch.io/tutorials/javascript-transpilers-what-they-are-why-we-need-them
+[babel]:                            https://babeljs.io/
+[webpack]:                          https://webpack.js.org/
+[babel-online]:                     http://babeljs.io/repl/#?babili=false&evaluate=true&lineWrap=false&presets=es2015%2Creact%2Cstage-2&targets=&browsers=&builtIns=false&debug=false&code_lz=Q
+[hoisting]:                         http://loopinfinito.com.br/2014/10/29/hoisting-e-escopo-em-javascript/
+[iife]:                             https://developer.mozilla.org/pt-BR/docs/Glossario/IIFE
 [object-freeze]:                https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/freeze
-[immutable]:                    https://facebook.github.io/immutable-js/
+[immutable]:                        https://facebook.github.io/immutable-js/
+[es6-o-guia-definitivo-parte-2]:    {% post_url 2017-08-23-es6-o-guia-definitivo-parte-2 %}
