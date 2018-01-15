@@ -16,11 +16,11 @@ Faaala galera! Já deu pra ver a pancada de funcionalidades que vieram junto com
 
 Tenho certeza de que eu não sou o único a odiar as inevitáveis concatenações de strings no nosso código. Finalmente o **ES6** trouxe consigo uma forma bem fácil de utilizar variáveis e funções dentro de strings:
 
-{% gist 35e37e7753220c09665facac3f70599c %} 
+{% gist 35e37e7753220c09665facac3f70599c %}
 
 Ou seja, a única coisa que precisamos fazer é colocar nosso código dentro do delimitador `${}` e _Voilá!_ E como brinde, ainda gamos a possibilidade de criar um texto com várias linhas sem ter que concatenar e utilizar vários `\n`.
 
-{% gist c1ed7a4065d7bb33bb3fce2526e2c69d %} 
+{% gist c1ed7a4065d7bb33bb3fce2526e2c69d %}
 
 ## Arrow functions
 
@@ -30,13 +30,13 @@ Mas vamos por partes...
 
 Vejamos o seguinte exemplo, que mostra primeiramente a diferença na sintaxe:
 
-{% gist a4fed610c774d1699088df8ac1cbc9a4 %} 
+{% gist a4fed610c774d1699088df8ac1cbc9a4 %}
 
 Bem simples, não é? Note que não precisamos definir o retorno da função com essa sintaxe, mas se quisermos ter um corpo de bloco na nossa **arrow function**, podemos utilizar o delimitador `{}`:
 
-{% gist 4929883755b81d901f52f2ac7630a75e %} 
+{% gist 4929883755b81d901f52f2ac7630a75e %}
 
-Outra vantagem de utilizarmos **arrow functions** é o fato de herdarmos o **binding** de `this` do escopo mais próximo. 
+Outra vantagem de utilizarmos **arrow functions** é o fato de herdarmos o **binding** de `this` do escopo mais próximo.
 
 Mas o que isso significa?
 
@@ -74,7 +74,7 @@ Beem melhor né? E o melhor de tudo é que você pode utilizar o **Destructuring
 
 ## Orientação a objetos
 
-Um dos recursos mais aguardados _(e polêmicos)_ do *ES6* é o suporte à **Classes** de objetos. A verdade é que o nosso querido **Javascript** sempre foi uma linguagem extremamente flexível, e por isso existem muitas formas de você representar um objeto, desde a declaração de um simples **JSON** até uma [função de primeira classe][primeira-classe].
+Um dos recursos mais aguardados _(e polêmicos)_ do _ES6_ é o suporte à **Classes** de objetos. A verdade é que o nosso querido **Javascript** sempre foi uma linguagem extremamente flexível, e por isso existem muitas formas de você representar um objeto, desde a declaração de um simples **JSON** até uma [função de primeira classe][primeira-classe].
 
 Isso acontece porque, até o **ES5**, o Javascript se utilizava apenas da [prototipação][prototipacao] para implementar a **Orientação a Objetos**. Com isso, temos a possibilidade de instanciar uma simples função, e o próprio Javascript faz o **binding** da variável `this` de acordo com o seu escopo, ganhando então o comportamento esperado de um objeto.
 
@@ -90,7 +90,7 @@ Veja o seguinte exemplo, com o uso de `prototype`:
 
 {% gist a5624eb381766bf90e62eca564dbb553 %}
 
-Como vocês podem ver, além de chamar o construtor do "objeto pai", precisamos substituir a propriedade **prototype** para termos acesso à todos os métodos do protótipo Monstro. 
+Como vocês podem ver, além de chamar o construtor do "objeto pai", precisamos substituir a propriedade **prototype** para termos acesso à todos os métodos do protótipo Monstro.
 
 Se você não está familiarizado com o uso do prototype, ele nada mais é que uma propriedade que contém uma cópia do seu objeto pai. Por exemplo, quando instanciamos uma data com `new Date()`, automaticamente a sua propriedade **prototype** é setada com `Date.prototype`, fazendo com que nosso objeto "herde" os métodos e propriedades de `Date` _(para mais informações sobre o **prototype**, confira esse [post][prototype-alura] no blog da [Alura][alura])_.
 
@@ -106,7 +106,7 @@ O método `constructor` é executado toda vez que um novo objeto é instanciado,
 
 Note que estamos utilizando o prefixo `_` antes dos nomes de atributos da classe `Monstro`. Essa é apenas uma **convenção** para a definição de atributos privados da nossa classe, e por se tratar apenas de uma convenção, entende-se que a linguagem não vai fazer nenhum esforço para bloquear o acesso desses atributos de fora da nossa classe. Mas é um bom padrão para identificarmos se um atributo é privado ou não toda vez que batemos o olho nele.
 
-E a parte boa é que ganhamos [sugar syntax][sugar-syntax] para os nossos **Getters and Setters**. Veja um exemplo:
+E a parte boa é que ganhamos [syntax sugar][sugar-syntax] para os nossos **Getters and Setters**. Veja um exemplo:
 
 {% gist fc3c08353006c6eaf305f9020a4865b2 %}
 
@@ -116,11 +116,11 @@ E se você está se perguntando _"Mas onde estão os métodos estáticos?"_, pod
 
 {% gist 72eac6ae9a6506adb625f33d683a62a9 %}
 
-E vale lembrar duas últimas coisas sobre o **Suporte a Classes** do **ES6**: 
+E vale lembrar duas últimas coisas sobre o **Suporte a Classes** do **ES6**:
 
-- A Declaração de classes não são **hoisted** como acontece com as funções. Ou seja, primeiro precisamos declarar nossa classe para só depois utilizá-la.
+* A Declaração de classes não são **hoisted** como acontece com as funções. Ou seja, primeiro precisamos declarar nossa classe para só depois utilizá-la.
 
-- Todos os itens que foram abordardos nesse tópico não passam de **sugar syntaxes** para a **prototipação** padrão do **ES5**. Com isso temos uma maneira mais semântica de aplicar a orientação à objetos em nossos projetos através da declaração de classes, mas para o Javascript, tudo continua sendo a boa e velha prototipação. E isso não é necessariamente uma coisa ruim, porque nos dá a possibilidade de fazer um _"mix"_ das duas abordagens =) 
+* Todos os itens que foram abordardos nesse tópico não passam de **sugar syntaxes** para a **prototipação** padrão do **ES5**. Com isso temos uma maneira mais semântica de aplicar a orientação à objetos em nossos projetos através da declaração de classes, mas para o Javascript, tudo continua sendo a boa e velha prototipação. E isso não é necessariamente uma coisa ruim, porque nos dá a possibilidade de fazer um _"mix"_ das duas abordagens =)
 
 ---
 
@@ -130,11 +130,11 @@ Bom galera, se vocês gostaram, não se esquecem de comentar aí embaixo, divulg
 
 **Até a Próxima!!**
 
-[ultimo-post]:                  {% post_url 2017-08-17-es6-o-guia-definitivo-parte-1 %}
-[primeira-classe]:              https://medium.com/@angelorubin/javascript-first-class-function-fun%C3%A7%C3%B5es-de-primeira-classe-7ebf63d2c83a
-[prototipacao]:                 https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript
-[prototype-alura]:              http://blog.alura.com.br/heranca-em-javascript/
-[alura]:                        https://www.alura.com.br/
-[sugar-syntax]:                 https://www.quora.com/What-is-syntactic-sugar-in-programming-languages
-[common-js]:                    http://requirejs.org/docs/commonjs.html
-[es6-features]:                 http://es6-features.org/
+[ultimo-post]: {% post_url 2017-08-17-es6-o-guia-definitivo-parte-1 %}
+[primeira-classe]: https://medium.com/@angelorubin/javascript-first-class-function-fun%C3%A7%C3%B5es-de-primeira-classe-7ebf63d2c83a
+[prototipacao]: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript
+[prototype-alura]: http://blog.alura.com.br/heranca-em-javascript/
+[alura]: https://www.alura.com.br/
+[sugar-syntax]: https://www.quora.com/What-is-syntactic-sugar-in-programming-languages
+[common-js]: http://requirejs.org/docs/commonjs.html
+[es6-features]: http://es6-features.org/
