@@ -26,6 +26,6 @@ Se nós tivéssemos que fazer 3 chamadas consecutivas a uma determinada API, por
 
 {% gist 8860658c19c008f1dfecb4beb20db404 %}
 
-Calma, não me matem por estar utilizando [Jquery][jquery] por livre e espontânea vontade nesse exemplo. A idéia é mostrar a utilização de callbacks no retorno de funções assíncronas, e nada melhor que o <s>bom</s> e velho `$.get` para isso.
+Calma, não me matem por estar utilizando [Jquery][jquery] por livre e espontânea vontade nesse exemplo. A idéia é mostrar a utilização de callbacks no retorno de funções assíncronas, e nada <s>pior</s> melhor que o <s>bom</s> e velho `$.get` para isso.
 
 [jquery]: http://jquery.com
